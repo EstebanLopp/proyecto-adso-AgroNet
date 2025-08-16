@@ -1,0 +1,288 @@
+/* --- Estructura del componente --- */
+.producto__carrito {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--white);
+  padding: 1.6rem;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+  font-family: var(--main-font);
+  font-size: var(--fs-xxxs);
+  border: 1px solid var(--gray-300);
+  margin-block-end: 2rem;
+}
+
+/* Imagen del producto */
+.producto__carrito__imagen {
+  inline-size: 16rem;
+  block-size: 12rem;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+
+/* Nombre del producto */
+.producto__carrito__detalles__nombre {
+  font-size: var(--fs-xxxs);
+  font-weight: normal;
+  color: var(--gray-900);
+}
+
+/* Secciones comunes */
+.producto__carrito__cantidad,
+.producto__carrito__precio,
+.producto__carrito__total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.producto__carrito label {
+  font-size: var(--fs-xxxs);
+  color: var(--gray-700);
+  font-family: var(--main-font);
+}
+
+/* --- CONTADOR --- */
+.producto__carrito__contador {
+  display: flex;
+  border: 1px solid var(--gray-300);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  font-family: var(--main-font);
+}
+
+.producto__carrito__contador button {
+  background-color: var(--white);
+  color: var(--gray-900);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: var(--fs-xxxs);
+  cursor: pointer;
+}
+
+.producto__carrito__contador input {
+  border: none;
+  inline-size: 5rem;
+  text-align: center;
+  font-size: var(--fs-xxxs);
+  color: var(--gray-900);
+  background-color: var(--white);
+  font-family: var(--main-font);
+}
+
+.producto__carrito__contador button:hover {
+  background-color: var(--gray-50);
+}
+
+/* Inputs de precio y total */
+.producto__carrito__precio input,
+.producto__carrito__total input {
+  inline-size: 6rem;
+  padding: 0.4rem;
+  text-align: center;
+  border: 1px solid var(--gray-200);
+  border-radius: 0.4rem;
+  font-size: var(--fs-xxxs);
+  color: var(--gray-900);
+  background-color: var(--white);
+  font-family: var(--main-font);
+}
+
+/* Botón Editar */
+.producto__carrito__acciones__editar {
+  background-color: var(--primary-500);
+  color: var(--white);
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: var(--fs-xxxs);
+  font-family: var(--main-font);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.producto__carrito__acciones__editar:hover {
+  background-color: var(--primary-600);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .producto__carrito {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: start;
+  }
+
+  .producto__carrito__imagen {
+    inline-size: 100%;
+    block-size: auto;
+  }
+
+  .producto__carrito__cantidad,
+  .producto__carrito__precio,
+  .producto__carrito__total {
+    flex-direction: row;
+    justify-content: space-between;
+    inline-size: 100%;
+    align-items: center;
+  }
+
+  .producto__carrito__contador input {
+    inline-size: 5rem;
+    flex-shrink: 0;
+  }
+
+  .producto__carrito__acciones__editar {
+    inline-size: 100%;
+    justify-content: center;
+  }
+}
+/* --- Estructura del componente --- */
+.producto__carrito {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--white);
+  padding: 16px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  font-family: var(--main-font);
+  font-size: var(--fs-xxxs);
+  border: 1px solid var(--gray-300);
+  margin-block-end: 20px;
+}
+
+/* Imagen del producto */
+.producto__carrito__imagen {
+  inline-size: 160px;
+  block-size: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Nombre del producto */
+.producto__carrito__detalles__nombre {
+  font-size: var(--fs-xxxs);
+  font-weight: normal;
+  color: var(--gray-900);
+}
+
+/* Secciones comunes */
+.producto__carrito__cantidad,
+.producto__carrito__precio,
+.producto__carrito__total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.producto__carrito label {
+  font-size: var(--fs-xxxs);
+  color: var(--gray-700);
+  font-family: var(--main-font);
+}
+
+/* --- CONTADOR --- */
+.producto__carrito__contador {
+  display: flex;
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  overflow: hidden;
+  font-family: var(--main-font);
+}
+
+.producto__carrito__contador button {
+  background-color: var(--white);
+  color: var(--gray-900);
+  border: none;
+  padding: 6px 12px;
+  font-size: var(--fs-xxxs);
+  cursor: pointer;
+}
+
+.producto__carrito__contador input {
+  border: none;
+  inline-size: 50px;
+  text-align: center;
+  font-size: var(--fs-xxxs);
+  color: var(--gray-900);
+  background-color: var(--white);
+  font-family: var(--main-font);
+}
+
+.producto__carrito__contador button:hover {
+  background-color: var(--gray-50);
+}
+
+/* Inputs de precio y total */
+.producto__carrito__precio input,
+.producto__carrito__total input {
+  inline-size: 60px;
+  padding: 4px;
+  text-align: center;
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  font-size: var(--fs-xxxs);
+  color: var(--gray-900);
+  background-color: var(--white);
+  font-family: var(--main-font);
+}
+
+/* Botón Editar */
+.producto__carrito__acciones__editar {
+  background-color: var(--primary-500);
+  color: var(--white);
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: var(--fs-xxxs);
+  font-family: var(--main-font);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.producto__carrito__acciones__editar:hover {
+  background-color: var(--primary-600);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .producto__carrito {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: start;
+  }
+
+  .producto__carrito__imagen {
+    inline-size: 100%;
+    block-size: auto;
+  }
+
+  .producto__carrito__cantidad,
+  .producto__carrito__precio,
+  .producto__carrito__total {
+    flex-direction: row;
+    justify-content: space-between;
+    inline-size: 100%;
+    align-items: center;
+  }
+
+  .producto__carrito__contador input {
+    inline-size: 50px;
+    flex-shrink: 0;
+  }
+
+  .producto__carrito__acciones__editar {
+    inline-size: 100%;
+    justify-content: center;
+  }
+}

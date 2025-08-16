@@ -1,0 +1,109 @@
+/* ----------- Dropdown ----------- */
+.dropdown {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: auto;
+  font-family: var(--main-font);
+}
+
+/* Botón */
+.dropdown__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--white);
+  color: var(--gray-500);
+  border: 1px solid var(--gray-50);
+  border-radius: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: var(--fs-xs);
+  min-width: 200px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.dropdown__button:hover {
+  border-color: var(--green-100);
+  background-color: var(--gray-50);
+}
+
+.dropdown__text {
+  flex: 1;                     /* ocupa el espacio para que quede centrado */
+  text-align: center;          /* centra el texto */
+}
+
+
+/* Icono (flecha) */
+.dropdown__icon {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+  font-size: 0.9em;
+  color: var(--gray-150);
+}
+
+/* Lista */
+.dropdown__list {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: var(--white);
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  list-style: none;
+  padding: 6px 0;
+  z-index: 100;
+  color: var(--gray-800);
+  font-size: var(--fs-xxs) ;
+}
+
+/* Al abrir */
+.dropdown__list--show {
+  display: block;
+  animation: fadeIn 0.25s ease;
+}
+
+/* Items */
+.dropdown__item {
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-align: center;
+  border-bottom: 1px solid var(--gray-50);
+  
+}
+
+/* Quitar línea al último */
+.dropdown__item:last-child {
+  border-bottom: none;
+}
+.dropdown__item:hover {
+  background-color: var(--gray-50);
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dropdown {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .dropdown__button {
+    width: 90%;
+    font-size: var(--fs-xxs);
+  }
+
+  .dropdown__item {
+    font-size: var(--fs-xxs);
+  }
+}

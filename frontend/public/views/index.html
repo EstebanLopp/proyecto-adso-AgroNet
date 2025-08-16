@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi proyecto</title>
+  <meta charset="UTF-8">
+  <title>AgroNet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Íconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Archivo de estilos -->
+  <link rel="stylesheet" href='/frontend/public/css/main.css'>
+
+  <!-- Script que insertará la tarjeta -->
+  <script defer src="/frontend/public/js/components/tarjeta_producto.js"></script>
+  <!--Lista desplegable-->
+  <script defer src="/frontend/public/js/components/lista_desplegable.js"></script>
 </head>
 <body>
-    
-    <h1 class="title">Mi proyecto</h1>
-    <h2>yo soy Jasmin</h2>
+<!--componente-->
+
+<div class="contenido-principal">
+  <section class="producto">
+    <div class="tarjeta-producto"></div>
+  </section>
+
+  <section class="dropdown">
+    <div class="lista-desplegable"></div>
+  </section>
+</div>
+
 </body>
 </html>

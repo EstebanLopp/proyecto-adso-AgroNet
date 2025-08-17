@@ -1,4 +1,4 @@
-body {          
+/* body {          
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +67,7 @@ body {
 .form__input::placeholder {
     color: var(--gray-500);    
     font-size: var(--fs-xxs);
-    opacity: 0.7; /* Asegura que no sea semi-transparente */
+    opacity: 0.7; /* Asegura que no sea semi-transparente 
 }
 
 .form__button--primary {
@@ -90,4 +90,4 @@ body {
     color: var(--primary-950);
     border: solid 0.2rem;
     background-color: var(--white);
-}
+} */

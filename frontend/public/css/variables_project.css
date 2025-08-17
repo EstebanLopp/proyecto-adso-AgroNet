@@ -1,0 +1,72 @@
+:root{
+    /* primary color */
+    --primary-950: #052E16;
+    --primary-900: #14532D;
+    --primary-800: #166534;
+    --primary-700: #15803D;
+    --primary-600: #16A34A;
+    --primary-500: #22C55E;
+    --primary-400: #4ADE80;
+    --primary-300: #86EFAC;
+    --primary-200: #BBF7D0;
+    --primary-100: #DCFCE7;
+    --primary-50: #F0FDF4;
+
+    /*secundary color*/
+    --terciary-950: #082F49;
+	--terciary-900: #17448E;
+	--terciary-800: #2F589A;
+	--terciary-700: #476CA7;
+	--terciary-600: #5F80B3;
+	--terciary-500: #7794C0;
+	--terciary-400: #8FA7CD;
+	--terciary-300: #A7BBD9;
+	--terciary-200: #BFCFE6;
+	--terciary-100: #D7E3F2;
+	--terciary-50: #EFF6FF;
+   
+    /* terciary color */
+    --secundary-950: #7F1D00;
+    --secundary-900: #C0520C;
+    --secundary-800: #C76425;
+    --secundary-700: #CE773E;
+    --secundary-600: #D58957;
+    --secundary-500: #DC9C70;
+    --secundary-400: #E3AE89;
+    --secundary-300: #EAC1A2;
+    --secundary-200: #F1D3BB;
+    --secundary-100: #F8E5D4;
+    --secundary-50: #FFF7ED;
+
+    /* Basic color*/
+    --white: #fff;
+    --black: #000;
+    --gray-950: #101010;
+    --gray-900: #262626;
+    --gray-800: #3B3B3B;
+    --gray-700: #515151;
+    --gray-600: #676767;
+    --gray-500: #7D7D7D;
+    --gray-400: #929292;
+    --gray-300: #A8A8A8;
+    --gray-200: #BEBEBE;
+    --gray-100: #D4D4D4;
+    --gray-50: #E9E9E9;
+
+
+	/* Font-family */
+	--main-font: Arial, Inria Sans;
+		
+
+    /* Font-size */
+    --fs-xxxxl: 8.0rem; /* Ultra grande */
+    --fs-xxxl: 6.4rem; /* Súper grande */
+    --fs-xxl: 4.8rem; /* Extra grande */
+    --fs-xl: 4.0rem;  /* Muy grande */
+    --fs-lg: 3.2rem;  /* Grande */
+    --fs-md: 2.4rem;  /* Mediano */
+    --fs-sm: 2.0rem;  /* Pequeño */
+    --fs-xs: 1.6rem;  /* Extra pequeño */
+    --fs-xxs: 1.4rem; /* Extra extra pequeño */
+    --fs-xxxs: 1.2rem; /*Mínimo*/
+}

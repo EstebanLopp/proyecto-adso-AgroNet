@@ -1,12 +1,3 @@
 /* El archivo layout.css se encarga de definir la estructura base de tu aplicación, como el sistema de grid, flexbox, contenedores, espaciados y alineaciones. Su objetivo es organizar los elementos de la página sin afectar su apariencia visual (colores, tipografías, etc.). */
 
 /* Distribución general (fondo del body, display, flexbox, grid, alturas, anchos, etc.). */
-
-.double-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  flex-wrap: wrap;
-  padding: 40px 20px;
-}

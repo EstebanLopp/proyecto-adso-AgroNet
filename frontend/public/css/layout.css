@@ -2,6 +2,7 @@
 
 /* Distribución general (fondo del body, display, flexbox, grid, alturas, anchos, etc.). */
 
+
 .double-container {
   display: flex;
   justify-content: center;

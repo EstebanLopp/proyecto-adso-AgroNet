@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Componentes</title>
     <link rel="stylesheet" href="../css/main.css" />
+  <meta charset="UTF-8">
+  <title>AgroNet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Íconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Archivo de estilos -->
+  <link rel="stylesheet" href='/frontend/public/css/main.css'>
+
+  <!-- Script que insertará la tarjeta -->
+  <script defer src="/frontend/public/js/components/tarjeta_producto.js"></script>
+  <!--Lista desplegable-->
+  <script defer src="/frontend/public/js/components/lista_desplegable.js"></script>
 </head>
 <body>
 
@@ -15,6 +30,18 @@
 
   <script src="../js/components/form.js"></script>
   <script src="../js/components/payment_method.js"></script>
+<!--componente-->
+
+<div class="contenido-principal">
+  <section class="producto">
+    <div class="tarjeta-producto"></div>
+  </section>
+
+  <section class="dropdown">
+    <div class="lista-desplegable"></div>
+  </section>
+</div>
+
 </body>
 </html>
     

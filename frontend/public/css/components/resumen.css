@@ -1,0 +1,70 @@
+:root {
+  --fw-bold: 600; /* Peso de fuente para títulos importantes */
+}
+
+/* CONTENEDOR PRINCIPAL */
+.resumen__producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--white);
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  border-radius: 0;
+  border: 0.1px solid var(--gray-200);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  inline-size: 95%;
+  max-inline-size: none;
+  gap: 2rem;
+  font-family: var(--main-font);
+}
+
+/* TEXTO "TOTAL A PAGAR" */
+.resumen__producto__descripcion p {
+  font-size: var(--fs-xs); /* tamaño usando variable (2rem) */
+  margin: 0;
+}
+
+/* DETALLE DE CAMPOS E INPUTS */
+.resumen__producto__detalle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.resumen__producto__campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.resumen__producto__input {
+  padding: 0.5rem;
+  border: 1px solid var(--gray-200);
+  border-radius: 0;
+  inline-size: 100px;
+  text-align: center;
+}
+
+/* BOTÓN PAGAR */
+.resumen__producto__btn__pagar {
+  background-color: var(--primary-500);
+  color: var(--white);
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: var(--fw-bold);
+  transition:background 0.3s;
+}
+
+.resumen__producto__btn__pagar:hover {
+  background-color: var(--primary-600);
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .resumen__producto {
+    flex-direction: column;
+    align-items: flex-s
+  }
+}

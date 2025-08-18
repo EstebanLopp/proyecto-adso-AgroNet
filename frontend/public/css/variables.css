@@ -1,5 +1,4 @@
-:root {
-
+:root{
     /* primary color */
     --primary-950: #052E16;
     --primary-900: #14532D;
@@ -71,4 +70,5 @@
     --fs-xxs: 1.4rem; /* Extra extra pequeño */
     --fs-xxxs: 1.2rem; /*Mínimo*/
 
+    
 }

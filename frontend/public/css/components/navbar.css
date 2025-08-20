@@ -12,7 +12,6 @@
     padding: 0 24px;
     font-family: var(--main-font);
     width: 100vw;
-    /* min-width: 0; */
     box-sizing: border-box;
 }
 
@@ -63,8 +62,9 @@
 .navbar__link:hover {
     opacity: 0.8;
     background-color: var(--primary-600);
+    border-radius: 0.8rem;
+    display: inline-block; /* Asegura que el fondo cubra el área del botón */
 }
-
 
 .navbar__icon {
     color:var(--white);

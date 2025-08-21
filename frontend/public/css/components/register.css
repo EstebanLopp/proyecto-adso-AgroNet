@@ -1,0 +1,145 @@
+
+.login {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* FONDO */
+.login__background {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('/frontend/public/assets/bg-forest.jpg') center center/cover no-repeat;
+    filter: blur(3px) brightness(0.9);
+    z-index: 0;
+}
+
+/* POSICION DEL CONTENEDOR */
+.login__main {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* COLOR DE FONDO DEL CUADRO */
+.login__box {
+    background: var(--white);
+    opacity: 85%;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px var(--black);
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TITULO DEL INICIAR SESION */
+.login__title {
+    margin: 0 0 1.2rem 0;
+    font-size: var(--fs-xxs);
+    font-weight: 500;
+    color: var(--gray-800);
+    text-align: center;
+}
+
+/* DIVISION ENTRE INICIAR SESION Y CREAR CUENTA */
+.login__divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--terciary-100);
+    margin: 1rem 0;
+}
+
+/* SEPARADOR DE CONTENIDO */
+.login__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* FORMA Y ESTILO DEL FORMULARIO */
+.login__input {
+    width: 92%;
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--terciary-100);
+    border-radius: 5px;
+    background: var(--gray-50);
+    font-size: var(--fs-xxxs);
+    outline: none;
+    transition: border 0.2s;
+}
+
+/* BOTTON OPRIMIDO */
+.login__input:focus {
+    border-color: var(--primary-100);
+}
+
+/* BOTTON PRIMARIO INICAR SESION */
+.login__button {
+    width: 60%;
+    margin: 0.5rem auto 0 auto;
+    padding: 0.5rem 0;
+    background: var(--primary-500);
+    color: var(--white);
+    border: none;
+    border-radius: 22px;
+    font-size: var(--fs-xxxs);
+    font-weight: 500;
+    cursor: pointer;
+    display: block;
+}
+
+.login__button:hover,
+.login__button:focus {
+    background: var(--primary-600);
+}
+
+/* BOTON SECUNDARIO CREAR CUENTA */
+.login__button--secondary {
+    background: var(--white);
+    color: var(--primary-500);
+    border: 1.5px solid var(--primary-500);
+    margin-top: 0.5rem;
+}
+
+.login__button--secondary:hover,
+.login__button--secondary:focus {
+    background: var(--gray-50);
+    color:  var(--primary-600);
+    border-color:  var(--primary-600);
+}
+
+/* SECCION OLVIDE MI CONTRASEÑA */
+.login__forgot {
+    display: block;
+    margin: 0.7rem auto 0.2rem auto;
+    color: var(--primary-500);
+    font-size: 0.90rem;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.login__forgot:hover,
+.login__forgot:focus {
+    color: var(--primary-700);
+}
+
+@media (max-width: 600px) {
+    .login__box {
+        padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+        max-width: 98vw;
+    }
+    .login__button {
+        width: 100%;
+    }
+}

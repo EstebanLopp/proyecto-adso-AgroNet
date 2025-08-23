@@ -1,32 +1,115 @@
-<div class="producto__carrito">
-  <img src="/Frontend/public/assets/manzan.jpg" alt="Producto" class="producto__carrito__img">
+<br>
+<br>
+<br>
+<h2 class="carrito__titulo">Carrito de compras</h2>
+<main class="carrito__contenedor">
 
-  <div class="producto__carrito__detalles">
-    <p class="producto__carrito__detalles__nombre">Manzana Gala</p>
-  </div>
+  <!-- caja 1 -->
+  <div class="producto__carrito">
+    <button type="button" class="producto__carrito__eliminar" aria-label="Eliminar">✕</button>
 
-  <div class="producto__carrito__cantidad">
-    <label for="cantidad">Cantidad</label>
-    <div class="producto__carrito__contador">
-      <button class="producto__carrito__contador__btn">-</button>
-      <input type="text" id="cantidad" value="5" readonly class="producto__carrito__contador__input">
-      <button class="producto__carrito__contador__btn">+</button>
+    <img src="/Frontend/public/assets/manzan.jpg" alt="Producto" class="producto__carrito__img">
+
+    <div class="producto__carrito__detalles">
+      <p class="producto__carrito__detalles__nombre">Manzana Gala</p>
+    </div>
+
+    <div class="producto__carrito__cantidad">
+      <label for="cantidad-1">Cantidad</label>
+      <div class="producto__carrito__contador">
+        <button class="producto__carrito__contador__btn">-</button>
+        <input type="text" id="cantidad-1" value="5" readonly class="producto__carrito__contador__input">
+        <button class="producto__carrito__contador__btn">+</button>
+      </div>
+    </div>
+
+    <div class="producto__carrito__precio">
+      <label for="precio-1">Precio Unidad</label>
+      <input type="text" id="precio-1" value="5.000" readonly class="producto__carrito__precio__input">
+    </div>
+
+    <div class="producto__carrito__total">
+      <label for="total-1">Total</label>
+      <input type="text" id="total-1" value="25.000" readonly class="producto__carrito__total__input">
+    </div>
+
+    <div class="producto__carrito__acciones">
+      <button class="producto__carrito__acciones__editar">
+        <i class="fas fa-pen"></i> Editar
+      </button>
     </div>
   </div>
 
-  <div class="producto__carrito__precio">
-    <label for="precio">Precio Unidad</label>
-    <input type="text" id="precio" value="5.000" readonly class="producto__carrito__precio__input">
+  <!-- caja 2 -->
+  <div class="producto__carrito">
+    <button type="button" class="producto__carrito__eliminar" aria-label="Eliminar">✕</button>
+
+    <img src="/Frontend/public/assets/naranja.jpg" alt="Producto" class="producto__carrito__img">
+
+    <div class="producto__carrito__detalles">
+      <p class="producto__carrito__detalles__nombre">Naranja</p>
+    </div>
+
+    <div class="producto__carrito__cantidad">
+      <label for="cantidad-2">Cantidad</label>
+      <div class="producto__carrito__contador">
+        <button class="producto__carrito__contador__btn">-</button>
+        <input type="text" id="cantidad-2" value="3" readonly class="producto__carrito__contador__input">
+        <button class="producto__carrito__contador__btn">+</button>
+      </div>
+    </div>
+
+    <div class="producto__carrito__precio">
+      <label for="precio-2">Precio Unidad</label>
+      <input type="text" id="precio-2" value="5.500" readonly class="producto__carrito__precio__input">
+    </div>
+
+    <div class="producto__carrito__total">
+      <label for="total-2">Total</label>
+      <input type="text" id="total-2" value="16.500" readonly class="producto__carrito__total__input">
+    </div>
+
+    <div class="producto__carrito__acciones">
+      <button class="producto__carrito__acciones__editar">
+        <i class="fas fa-pen"></i> Editar
+      </button>
+    </div>
   </div>
 
-  <div class="producto__carrito__total">
-    <label for="total">Total</label>
-    <input type="text" id="total" value="25.000" readonly class="producto__carrito__total__input">
+  <!-- caja 3 -->
+  <div class="producto__carrito">
+    <button type="button" class="producto__carrito__eliminar" aria-label="Eliminar">✕</button>
+
+    <img src="/Frontend/public/assets/cafe.jpg" alt="Producto" class="producto__carrito__img">
+
+    <div class="producto__carrito__detalles">
+      <p class="producto__carrito__detalles__nombre">Cafe -400gr</p>
+    </div>
+
+    <div class="producto__carrito__cantidad">
+      <label for="cantidad-3">Gramos</label>
+      <div class="producto__carrito__contador">
+        <button class="producto__carrito__contador__btn">-</button>
+        <input type="text" id="cantidad-3" value="1" readonly class="producto__carrito__contador__input">
+        <button class="producto__carrito__contador__btn">+</button>
+      </div>
+    </div>
+
+    <div class="producto__carrito__precio">
+      <label for="precio-3">Precio Unidad</label>
+      <input type="text" id="precio-3" value="31.000" readonly class="producto__carrito__precio__input">
+    </div>
+
+    <div class="producto__carrito__total">
+      <label for="total-3">Total</label>
+      <input type="text" id="total-3" value="31.000" readonly class="producto__carrito__total__input">
+    </div>
+
+    <div class="producto__carrito__acciones">
+      <button class="producto__carrito__acciones__editar">
+        <i class="fas fa-pen"></i> Editar
+      </button>
+    </div>
   </div>
 
-  <div class="producto__carrito__acciones">
-    <button class="producto__carrito__acciones__editar">
-      <i class="fas fa-pen"></i> Editar
-    </button>
-  </div>
-</div>
+</main>

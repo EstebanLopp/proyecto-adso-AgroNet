@@ -7,7 +7,9 @@
     position: relative;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+}
 /* FONDO */
 .login__background {
     position: fixed;
@@ -78,7 +80,7 @@
     transition: border 0.2s;
 }
 
-/* BOTTON OPRIMIDO */
+/* FORMULARIO ENCIMA */
 .login__input:focus {
     border-color: var(--primary-100);
 }
@@ -93,7 +95,6 @@
     border: none;
     border-radius: 22px;
     font-size: var(--fs-xxxs);
-    font-weight: 500;
     cursor: pointer;
     display: block;
 }
@@ -109,6 +110,8 @@
     color: var(--primary-500);
     border: 1.5px solid var(--primary-500);
     margin-top: 0.5rem;
+    width: 250px;
+    
 }
 
 .login__button--secondary:hover,

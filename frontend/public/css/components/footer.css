@@ -1,8 +1,8 @@
 .footer {
     position: static;
-    left: 0;
-    bottom: 0;
-    /* width: 100%; */
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    /* inline-size: 100%; */
     z-index: 100;
     background: var(--primary-900);
     color: var(--white);
@@ -12,7 +12,7 @@
     padding: 0.5rem 2rem;
     font-family: var(--main-font);
     font-size: 14px;
-    min-height: 40px;
+    min-block-size: 40px;
     gap: 4rem;
 }
 
@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding-right: 4rem;
+    padding-inline-end: 4rem;
 }
 
 .footer__link {
@@ -41,8 +41,8 @@
 }
 
 .footer__link img {
-    width: 20px;
-    height: 20px;
+    inline-size: 20px;
+    block-size: 20px;
     object-fit: contain;
 }
 
@@ -63,8 +63,8 @@
 }
 
 .footer__contact img {
-    width: 16px;
-    height: 16px;
+    inline-size: 16px;
+    block-size: 16px;
     object-fit: contain;
 }
 .footer__contact:hover {
